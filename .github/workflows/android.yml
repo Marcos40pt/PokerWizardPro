@@ -21,5 +21,8 @@ jobs:
       - name: Gradle cache
         uses: gradle/actions/setup-gradle@v3
 
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
       - name: Build (Debug)
         run: ./gradlew :app:assembleDebug
