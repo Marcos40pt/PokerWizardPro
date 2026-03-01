@@ -43,4 +43,7 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
 
     implementation(libs.timber)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    implementation(libs.lifecycle.viewmodel.compose)
 }
